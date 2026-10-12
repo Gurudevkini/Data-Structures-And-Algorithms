@@ -4,12 +4,18 @@ int main()
 {
 int n=583246;
 int digit=0;
-int count;
+int count=0;
+int countevenonly=0;
 while(n>0)
   {
-     count++;
+    count++;
     digit=n%10;
    n=n/10;
+   if(digit%2==0)
+   {
+     countevenonly++;
+   }
   }
-  cout<<"The Count of digits :"<<digit<<endl; 
+  cout<<"Total Count of digits :"<<count<<endl; 
+  cout<<"Total even numbers are :"<<countevenonly<<endl; 
 }
